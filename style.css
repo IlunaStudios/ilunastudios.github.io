@@ -1,0 +1,110 @@
+:root {
+    --bg-color: #FAFAFA;       /* Cinza perolado suave para não cansar a vista */
+    --card-bg: #FFFFFF;        /* Branco nos cards de produto */
+    --text-main: #111111;      /* Preto denso para leitura limpa */
+    --text-muted: #555555;     /* Cinza para subtítulos */
+    --border-color: #E0E0E0;   /* Traços finos em estética Line Art */
+    
+    --font-title: 'Cinzel', serif;
+    --font-body: 'Montserrat', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero {
+    padding: 60px 20px 40px;
+}
+
+.brand-title {
+    font-family: var(--font-title);
+    font-size: 2.4rem;
+    letter-spacing: 5px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.brand-subtitle {
+    font-size: 0.95rem;
+    letter-spacing: 2px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+.container {
+    max-width: 500px; /* Largura ideal para leitura no celular (sem sobrecarga TDAH) */
+    margin: 0 auto;
+}
+
+.book-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 35px 25px;
+    margin-bottom: 25px;
+    border-radius: 2px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.badge {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.book-card h2 {
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+}
+
+.book-card p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-bottom: 25px;
+}
+
+.btn-amazon {
+    display: inline-block;
+    width: 100%;
+    padding: 14px;
+    border: 1px solid var(--text-main);
+    color: var(--text-main);
+    background: transparent;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-amazon:hover {
+    background-color: var(--text-main);
+    color: #FFFFFF;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
